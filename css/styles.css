@@ -1,0 +1,171 @@
+/* ===== VARIABLES ===== */
+:root {
+  --primary: #6c63ff;
+  --secondary: #4dabf7;
+  --dark: #1a1a2e;
+  --light: #f8f9fa;
+  --transition: 0.3s ease;
+}
+
+/* ===== GLOBAL ===== */
+* { box-sizing: border-box; }
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: var(--light);
+  padding-top: 70px;
+  transition: background var(--transition), color var(--transition);
+}
+a { text-decoration: none; transition: color var(--transition); }
+a:hover { color: var(--primary); }
+h1, h2, h3, h4, h5, h6 { font-weight: 700; }
+.text-gradient {
+  background: linear-gradient(45deg, var(--primary), var(--secondary));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* ===== NAVBAR ===== */
+.bg-dark-gradient { background: linear-gradient(135deg, var(--dark), #16213e) !important; }
+.glow-text {
+  text-shadow: 0 0 10px var(--primary), 0 0 20px var(--primary);
+}
+.nav-link {
+  margin: 0 0.5rem;
+  font-weight: 500;
+  position: relative;
+  font-size: 1.1rem;
+}
+.nav-link.active {
+  color: var(--secondary) !important;
+}
+.nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: -5px; left: 0;
+  width: 100%; height: 2px;
+  background: var(--secondary);
+  animation: underlineGrow 0.3s ease-out;
+}
+@keyframes underlineGrow { from { width: 0; } to { width: 100%; } }
+
+/* ===== HERO ===== */
+.hero-section {
+  min-height: 100vh;
+  display: flex; align-items: center; justify-content: center;
+  background: linear-gradient(135deg, var(--dark), #16213e);
+  color: #fff; text-align: center; position: relative; overflow: hidden;
+}
+.hero-content {
+  z-index: 1;
+}
+.hero-content h1 {
+  font-size: 4.5rem;
+  margin-bottom: 1.5rem;
+  animation: fadeIn 1s ease-out;
+}
+.hero-content p { font-size: 1.5rem; margin-bottom: 2rem; }
+.hero-content .btn { padding: 0.75rem 2rem; font-size: 1.2rem; }
+.hero-content .btn:hover { background: var(--secondary); }
+#particles-js { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== CARDS & SECTIONS ===== */
+section { padding: 5rem 0; }
+.card {
+  transition: transform var(--transition), box-shadow var(--transition);
+  border-radius: 10px;
+}
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+.card-body { padding: 2rem; }
+
+/* ===== TIMELINE ===== */
+.timeline {
+  position: relative; padding-left: 2.5rem; list-style: none;
+}
+.timeline::before {
+  content: ''; position: absolute; left: 0.75rem; top: 0; bottom: 0;
+  width: 4px; background: var(--primary);
+}
+.timeline li {
+  position: relative; margin-bottom: 2.5rem; padding-left: 1.5rem;
+}
+.timeline li::before {
+  content: ''; position: absolute; left: -0.5rem; top: 0.5rem;
+  width: 1.2rem; height: 1.2rem; background: var(--primary); border-radius: 50%;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background: linear-gradient(135deg, var(--dark), #16213e);
+  color: #fff;
+}
+footer a { color: #f8f9fa; }
+footer .social-links a {
+  font-size: 1.8rem; margin: 0 0.75rem;
+  transition: color var(--transition);
+}
+footer .social-links a:hover { color: var(--primary); }
+
+/* ===== DARK MODE ===== */
+body.dark-mode {
+  background: #121212; color: #f8f9fa;
+}
+body.dark-mode .card,
+body.dark-mode .form-control {
+  background: #1e1e1e; color: #f8f9fa; border-color: #333;
+}
+body.dark-mode .btn-outline-light {
+  border-color: #f8f9fa;
+}
+body.dark-mode .btn-outline-light:hover {
+  background: var(--primary);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .hero-content h1 { font-size: 3rem; }
+  .hero-content p { font-size: 1.2rem; }
+  .nav-link { font-size: 1rem; }
+  .card-body { padding: 1.5rem; }
+}
+
+ /* ===== TESTIMONIALS ===== */
+.testimonial-card {
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  padding: 2rem;
+  text-align: center;
+  color: #fff;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-card .divider {
+  width: 80px;
+  height: 3px;
+  background: var(--primary);
+  margin: 1rem auto;
+}
+
+.testimonial-card .subtitle {
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--secondary);
+}

@@ -1,155 +1,338 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moses Mwangi Kamau - Portfolio</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <meta name="description" content="Portfolio of Moses Mwangi Kamau, a passionate software developer specializing in full-stack development and graphic design.">
-    <meta name="keywords" content="Moses Mwangi Kamau, portfolio, software developer, full-stack development, graphic design">
-    <meta name="author" content="Moses Mwangi Kamau">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Moses Mwangi - Full-Stack Developer and DevOps Engineer">
+  <title>Moses Mwangi | Full-Stack Developer</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header class="bg-dark text-white">
-        <nav class="navbar navbar-expand-lg navbar-dark container">
-            <a class="navbar-brand" href="#">Moses Mwangi Kamau</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-
-    <section id="home" class="container text-center my-5">
-        <h1>Welcome to My Portfolio</h1>
-        <p class="lead">Hi, I'm Moses Mwangi Kamau, a passionate software developer....</p>
-    </section>
-
-    <section id="about" class="bg-light py-5">
-        <div class="container text-center">
-            <h2>About Me</h2>
-            <img src="placeholder.jpg" class="rounded-circle mb-3" alt="Moses Mwangi Kamau" width="200">
-            <p>Hi, I'm Moses Mwangi Kamau, a software developer specializing in full-stack development, graphic design, and many more are available here. Passionate about building secure and scalable applications.</p>
-            <a href="resume.pdf" download class="btn btn-primary">Download My Resume</a>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark-gradient fixed-top">
+      <div class="container">
+        <a class="navbar-brand glow-text" href="index.html">Moses Mwangi</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto align-items-center">
+            <li class="nav-item"><a class="nav-link active" href="index.html" aria-current="page">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            <li class="nav-item ms-3">
+              <button id="dark-mode-toggle" class="btn btn-outline-light" aria-label="Toggle dark mode">
+                <i class="fas fa-moon"></i>
+              </button>
+            </li>
+          </ul>
         </div>
-    </section>
+      </div>
+    </nav>
+  </header>
 
-    <section id="projects" class="container py-5">
-        <h2 class="text-center">Projects</h2>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <div class="card-body">
-                        <h3 class="card-title">Hospital Management Information System</h3>
-                        <p class="card-text">Web-based system with authentication, database integration, and Docker support.</p>
-                        <p><strong>Technologies Used:</strong> HTML, CSS, JavaScript, PHP, MySQL, Docker</p>
-                        <a href="#" target="_blank" class="btn btn-secondary">GitHub Link</a>
-                        <a href="#" target="_blank" class="btn btn-secondary">Live Demo</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <div class="card-body">
-                        <h3 class="card-title">Linux & Web Server Setup</h3>
-                        <p class="card-text">Installed and configured Ubuntu, Apache2, MySQL, and PHP. Developed and hosted a simple web-based database system.</p>
-                        <p><strong>Technologies Used:</strong> Ubuntu, Apache2, MySQL, PHP</p>
-                        <a href="#" target="_blank" class="btn btn-secondary">GitHub Link</a>
-                        <a href="#" target="_blank" class="btn btn-secondary">Live Demo</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <div class="card-body">
-                        <h3 class="card-title">Personal IT Portfolio Website</h3>
-                        <p class="card-text">Showcasing IT skills and services. Built using HTML, CSS, and JavaScript.</p>
-                        <p><strong>Technologies Used:</strong> HTML, CSS, JavaScript</p>
-                        <a href="#" target="_blank" class="btn btn-secondary">GitHub Link</a>
-                        <a href="#" target="_blank" class="btn btn-secondary">Live Demo</a>
-                    </div>
-                </div>
-            </div>
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div id="particles-js" class="position-absolute w-100 h-100"></div>
+      <div class="hero-content position-relative z-1 container text-center">
+        <h1 class="display-3 fw-bold mb-3">Crafting Your Digital Future</h1>
+        <p class="lead fs-4 mb-4">I’m Moses Mwangi, a passionate Full-Stack Developer and DevOps Engineer with over five years of experience, dedicated to building scalable, high-performance web solutions and seamless user experiences that drive business success.</p>
+        <p class="fs-5 mb-4">From dynamic single-page applications to robust cloud infrastructures, I specialize in turning ideas into reality with cutting-edge technologies and a client-focused approach. Explore my work to see how I can elevate your next project.</p>
+        <div class="d-flex justify-content-center gap-3">
+          <a href="#projects" class="btn btn-primary btn-lg px-4 py-2">Explore My Work</a>
+          <a href="#contact" class="btn btn-outline-light btn-lg px-4 py-2">Get in Touch</a>
         </div>
+      </div>
     </section>
 
-    <section id="contact" class="bg-light py-5">
-        <div class="container text-center">
-            <h2>Contact Me</h2>
-            <form action="https://formspree.io/f/mqapbpvb" method="POST">
-                <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" class="form-control" id="name" name="name" required>
+    <!-- Services Section -->
+    <section id="services" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5 display-4 fw-bold">What I Bring to the Table</h2>
+        <p class="text-center fs-5 mb-5">With a versatile skill set and a commitment to excellence, I offer comprehensive solutions tailored to your unique needs:</p>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm text-center p-4">
+              <i class="fas fa-laptop-code fa-3x mb-3 text-primary" aria-label="Web Development"></i>
+              <h5 class="fw-bold">Custom Web Development</h5>
+              <p>Building responsive, modern single-page applications (SPAs) and content management systems using React, Vue.js, Angular, or vanilla JavaScript. I focus on pixel-perfect designs, optimized performance, and seamless integration with back-end systems to meet your business goals.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm text-center p-4">
+              <i class="fas fa-server fa-3x mb-3 text-success" aria-label="Backend Development"></i>
+              <h5 class="fw-bold">Backend & API Design</h5>
+              <p>Designing secure, scalable RESTful and GraphQL APIs with Node.js, Express, Laravel, Symfony, Django, or Flask. My solutions ensure robust server-side logic, efficient data handling, and smooth third-party integrations for enterprise-level reliability.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm text-center p-4">
+              <i class="fas fa-database fa-3x mb-3 text-info" aria-label="Database Management"></i>
+              <h5 class="fw-bold">Database Architecture</h5>
+              <p>Architecting and optimizing databases with MySQL, PostgreSQL, MongoDB, and Redis. I handle schema design, data migrations, indexing strategies, and performance tuning to ensure your data is secure, accessible, and lightning-fast.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm text-center p-4">
+              <i class="fas fa-cloud fa-3x mb-3 text-warning" aria-label="Cloud Services"></i>
+              <h5 class="fw-bold">Cloud & DevOps</h5>
+              <p>Implementing CI/CD pipelines, containerization with Docker and Kubernetes, and cloud deployments on AWS, Azure, or GCP. I integrate monitoring tools like Prometheus and automate workflows to deliver scalable, resilient infrastructures.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm text-center p-4">
+              <i class="fas fa-mobile-alt fa-3x mb-3 text-danger" aria-label="Mobile Development"></i>
+              <h5 class="fw-bold">Mobile App Development</h5>
+              <p>Creating cross-platform mobile applications with React Native or Flutter, integrated with cloud backends. I prioritize intuitive UX, native-like performance, and compatibility across iOS and Android for a consistent user experience.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm text-center p-4">
+              <i class="fas fa-shield-alt fa-3x mb-3 text-secondary" aria-label="Security"></i>
+              <h5 class="fw-bold">Security & Auditing</h5>
+              <p>Conducting penetration testing, vulnerability assessments, and ensuring OWASP Top 10 compliance and GDPR readiness. I safeguard your applications with encryption, secure authentication, and proactive risk mitigation strategies.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section id="projects" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-5 display-4 fw-bold">Featured Projects</h2>
+        <p class="text-center fs-5 mb-5">A showcase of my most impactful work, demonstrating technical expertise and real-world results:</p>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <img src="images/project1-thumb.jpg" class="card-img-top" alt="Hospital Management System" loading="lazy">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Hospital Management System</h5>
+                <p class="card-text">A Dockerized Symfony and MySQL application featuring role-based access control, patient scheduling, inventory tracking, and real-time analytics. Deployed for a healthcare provider, it reduced administrative overhead by 35% and improved patient data accuracy.</p>
+                <a href="projects.html#hmis" class="btn btn-sm btn-primary">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <img src="images/project7-thumb.jpg" class="card-img-top" alt="Hotel POS System" loading="lazy">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Hotel POS System</h5>
+                <p class="card-text">A comprehensive point-of-sale system for Bellamy Hotel, built with PHP, MySQL, and Bootstrap. Includes order management, billing automation, staff scheduling, and detailed financial reporting, boosting revenue by 30% through streamlined operations.</p>
+                <a href="projects.html#hotelpos" class="btn btn-sm btn-primary">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <img src="images/project8-thumb.jpg" class="card-img-top" alt="Student Registration System" loading="lazy">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Student Registration System</h5>
+                <p class="card-text">A web-based platform using Apache, PHP, and MySQL for student enrollment, course management, and reporting dashboards. Implemented for an educational institution, it cut registration processing time by 50% and enhanced data visibility for administrators.</p>
+                <a href="projects.html#studentsys" class="btn btn-sm btn-primary">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-5">
+          <a href="projects.html" class="btn btn-outline-primary btn-lg px-4">View All Projects</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-5 bg-dark text-white position-relative overflow-hidden">
+      <div class="container position-relative z-1">
+        <div class="section-header text-center mb-5">
+            <span class="subtitle text-primary fs-5 fw-semibold d-block mb-2">What Clients Say About Me</span>
+          <h2 class="display-4 fw-bold mb-3">Trusted by Industry Leaders</h2>
+          <p class="fs-5">Hear from clients who’ve experienced the value I bring to their projects:</p>
+          <div class="divider mx-auto bg-primary"></div>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card bg-transparent border border-light border-opacity-10 h-100 testimonial-card">
+              <div class="card-body p-4 text-center">
+                <div class="quote-icon mb-4 text-primary">
+                  <i class="fas fa-quote-left fa-2x" aria-hidden="true"></i>
                 </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" class="form-control" id="email" name="email" required>
+                <p class="card-text fs-5 fst-italic mb-4">"Moses transformed our outdated system into a modern, efficient platform. His expertise in both development and deployment is unmatched! He delivered ahead of schedule and provided ongoing support that ensured our team adapted seamlessly."</p>
+                <div class="client-info">
+                  <div class="client-img mb-3 mx-auto">
+                    <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Jane Doe" class="rounded-circle" width="60" loading="lazy">
+                  </div>
+                  <h6 class="fw-bold text-white">Jane Doe</h6>
+                  <p class="text-light mb-2">CEO of HealthTech</p>
+                  <div class="rating mt-2 text-warning">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                  </div>
                 </div>
-                <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea class="form-control" id="message" name="message" required></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card bg-transparent border border-light border-opacity-10 h-100 testimonial-card">
+              <div class="card-body p-4 text-center">
+                <div class="quote-icon mb-4 text-primary">
+                  <i class="fas fa-quote-left fa-2x" aria-hidden="true"></i>
                 </div>
-                <button type="submit" class="btn btn-primary">Send</button>
+                <p class="card-text fs-5 fst-italic mb-4">"Working with Moses was a game-changer. The POS system he built for our hotel streamlined operations and boosted our revenue by 30%. His proactive communication and attention to detail made the entire process effortless."</p>
+                <div class="client-info">
+                  <div class="client-img mb-3 mx-auto">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="John Smith" class="rounded-circle" width="60" loading="lazy">
+                  </div>
+                  <h6 class="fw-bold text-white">John Smith</h6>
+                  <p class="text-light mb-2">Bellamy Hotel Manager</p>
+                  <div class="rating mt-2 text-warning">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card bg-transparent border border-light border-opacity-10 h-100 testimonial-card">
+              <div class="card-body p-4 text-center">
+                <div class="quote-icon mb-4 text-primary">
+                  <i class="fas fa-quote-left fa-2x" aria-hidden="true"></i>
+                </div>
+                <p class="card-text fs-5 fst-italic mb-4">"His attention to detail and proactive communication made the project a success. We've already contracted him for two more projects! Moses’s ability to anticipate our needs and deliver scalable solutions is truly exceptional."</p>
+                <div class="client-info">
+                  <div class="client-img mb-3 mx-auto">
+                    <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Emily Carter" class="rounded-circle" width="60" loading="lazy">
+                  </div>
+                  <h6 class="fw-bold text-white">Emily Carter</h6>
+                  <p class="text-light mb-2">EduSys Director</p>
+                  <div class="rating mt-2 text-warning">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-5">
+          <a href="#contact" class="btn btn-primary btn-lg px-4 py-2">Get Your Project Started</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications & Courses Section -->
+    <section id="certifications" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5 display-4 fw-bold">Certifications & Courses</h2>
+        <p class="text-center fs-5 mb-5">My commitment to continuous learning is reflected in these industry-recognized credentials and specialized training programs:</p>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="card h-100 border-0 shadow-sm p-3">
+              <h5 class="fw-bold">AWS Certified Solutions Architect – Associate</h5>
+              <p class="small">Amazon Web Services (Issued: June 2022)</p>
+              <p>Mastered cloud architecture principles, designing scalable and cost-effective solutions on AWS, including EC2, S3, RDS, and VPC configurations. Applied these skills to deploy resilient applications for clients.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card h-100 border-0 shadow-sm p-3">
+              <h5 class="fw-bold">Full-Stack Web Development</h5>
+              <p class="small">Coursera via University of Michigan (Completed: March 2021)</p>
+              <p>Completed a rigorous program covering HTML, CSS, JavaScript, React, Node.js, and MongoDB. Built a fully functional e-commerce platform as a capstone project, enhancing my full-stack expertise.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card h-100 border-0 shadow-sm p-3">
+              <h5 class="fw-bold">Docker and Kubernetes: The Practical Guide</h5>
+              <p class="small">Udemy (Completed: September 2022)</p>
+              <p>Gained hands-on experience in containerization and orchestration, deploying a multi-container application with Kubernetes. This knowledge streamlined my DevOps workflows for faster deployments.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card h-100 border-0 shadow-sm p-3">
+              <h5 class="fw-bold">Cybersecurity Essentials</h5>
+              <p class="small">Cisco Networking Academy (Completed: December 2021)</p>
+              <p>Learned foundational security concepts like threat detection, encryption, and secure coding practices. Implemented these techniques to protect client applications from common vulnerabilities.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5 display-4 fw-bold">Let’s Collaborate</h2>
+        <p class="text-center fs-5 mb-5">Ready to bring your vision to life? Reach out to discuss your project needs and how I can deliver tailored, high-quality solutions:</p>
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <form action="submit_form.php" method="POST" class="needs-validation" novalidate>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="name" class="form-label fw-bold">Full Name</label>
+                  <input type="text" class="form-control" id="name" name="name" placeholder="e.g., John Doe" required>
+                  <div class="invalid-feedback">Please enter your full name.</div>
+                </div>
+                <div class="col-md-6">
+                  <label for="email" class="form-label fw-bold">Email Address</label>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="e.g., john@example.com" required>
+                  <div class="invalid-feedback">Please enter a valid email address.</div>
+                </div>
+                <div class="col-12">
+                  <label for="message" class="form-label fw-bold">Your Message</label>
+                  <textarea class="form-control" id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+                  <div class="invalid-feedback">Please provide a message.</div>
+                </div>
+                <div class="col-12 text-center">
+                  <button type="submit" class="btn btn-primary btn-lg px-4">Send Message</button>
+                </div>
+              </div>
             </form>
-            <h2>You can also reach me at <a href="mailto:mwangimoses372@gmail.com">mwangimoses372@gmail.com</a></h2>
-            <h2>Phone: 0742784172</h2>
-            <p>Follow me on:</p>
-            <ul>
-                <li><a href="https://github.com/MosesCodeX-CS" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
-                <li><a href="https://www.instagram.com/mosisto254/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
-                <li><a href="https://www.linkedin.com/in/moses-mwangi-1a0a68357/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
-            </ul>
+          </div>
         </div>
+      </div>
     </section>
+  </main>
 
-    <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2025 Moses Mwangi Kamau. All rights reserved.</p>
-    </footer>
+  <footer class="bg-dark text-white py-5">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-md-4">
+          <h3>Moses Mwangi</h3>
+          <p>Full-Stack Developer & DevOps Engineer building scalable web applications and intuitive UX.</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 text-md-end">
+          <h5>Connect with Me</h5>
+          <div class="social-links mb-3">
+            <a href="https://github.com/MosesCodeX-CS" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="text-white me-3">
+              <i class="fab fa-github fa-lg"></i>
+            </a>
+            <a href="https://linkedin.com/in/moses-mwangi" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="text-white me-3">
+              <i class="fab fa-linkedin fa-lg"></i>
+            </a>
+            <a href="mailto:mwangimoses372@gmail.com" aria-label="Email" class="text-white">
+              <i class="fas fa-envelope fa-lg"></i>
+            </a>
+          </div>
+          <p class="mb-0">© <span id="year"></span> All Rights Reserved</p>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script>
-        // Smooth scrolling
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-
-        // Highlight active section in navigation bar
-        const sections = document.querySelectorAll('section');
-        const navLinks = document.querySelectorAll('.nav-link');
-
-        window.addEventListener('scroll', () => {
-            let current = '';
-
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                if (pageYOffset >= sectionTop - 60) {
-                    current = section.getAttribute('id');
-                }
-            });
-
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href').includes(current)) {
-                    link.classList.add('active');
-                }
-            });
-        });
-    </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" defer></script>
+  <script src="js/main.js" defer></script>
 </body>
 </html>

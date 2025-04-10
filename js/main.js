@@ -15,6 +15,50 @@ async function loadComponents() {
   }
 }
 
+// Set current year
+document.addEventListener('DOMContentLoaded', function () {
+  const yearElement = document.getElementById('year');
+  if (yearElement) {
+    yearElement.textContent = new Date().getFullYear();
+  }
+
+  // Filter functionality
+  const filterButtons = document.querySelectorAll('.filter-buttons .btn');
+  const serviceItems = document.querySelectorAll('.service-item');
+
+  filterButtons.forEach((button) => {
+    button.addEventListener('click', function () {
+      // Remove active class from all buttons
+      filterButtons.forEach((btn) => btn.classList.remove('active'));
+      // Add active class to clicked button
+      this.classList.add('active');
+
+      const filter = this.getAttribute('data-filter');
+
+      serviceItems.forEach((item) => {
+        if (filter === 'all' || item.getAttribute('data-category') === filter) {
+          item.style.display = 'block';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    });
+  });
+
+  // Dark mode toggle
+  const darkModeToggle = document.getElementById('dark-mode-toggle');
+  if (darkModeToggle) {
+    darkModeToggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      const icon = darkModeToggle.querySelector('i');
+      if (icon) {
+        icon.classList.toggle('fa-moon');
+        icon.classList.toggle('fa-sun');
+      }
+    });
+  }
+});
+
 // 2. Highlight active nav link
 function setActiveNavLink() {
   const page = location.pathname.split('/').pop() || 'index.html';

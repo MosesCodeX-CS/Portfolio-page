@@ -141,12 +141,18 @@ body.dark-mode .btn-outline-light:hover {
  /* ===== TESTIMONIALS ===== */
 .testimonial-card {
   transition: all 0.3s ease;
-  backdrop-filter: blur(10px);
   background-color: rgba(255, 255, 255, 0.05);
   border-radius: 10px;
   padding: 2rem;
   text-align: center;
   color: #fff;
+}
+
+/* Fallback for unsupported browsers */
+@supports (backdrop-filter: blur(10px)) {
+  .testimonial-card {
+    backdrop-filter: blur(10px);
+  }
 }
 
 .testimonial-card:hover {
@@ -168,4 +174,26 @@ body.dark-mode .btn-outline-light:hover {
   text-transform: uppercase;
   font-weight: 600;
   color: var(--secondary);
+}
+
+/* Custom CSS for hover effects */
+.transition-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+
+.icon-wrapper {
+  transition: all 0.3s ease;
+}
+
+.card:hover .icon-wrapper {
+  transform: scale(1.1);
+}
+
+.feature-box {
+  transition: all 0.3s ease;
+}
+
+.feature-box:hover {
+  transform: translateY(-5px);
 }

@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Professional IT Services by Moses Mwangi" />
+  <title>Services | Moses Mwangi</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
+  <!-- Add your existing script tags here -->
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark-gradient fixed-top">
+      <div class="container">
+        <a class="navbar-brand glow-text" href="index.html">Moses Mwangi</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto align-items-center">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item ms-3">
+              <button id="dark-mode-toggle" class="btn btn-outline-light" aria-label="Toggle dark mode">
+                <i class="fas fa-moon"></i>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="services-section py-5 mt-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="display-4 fw-bold">My <span class="text-gradient">Services</span></h2>
+        <p class="lead">Comprehensive IT solutions tailored to your specific needs</p>
+      </div>
+
+      <!-- Filters -->
+      <div class="text-center filter-buttons mb-5">
+        <button class="btn btn-outline-primary btn-lg me-2 active" data-filter="all">All Services</button>
+        <button class="btn btn-outline-primary btn-lg me-2" data-filter="development">Development</button>
+        <button class="btn btn-outline-primary btn-lg me-2" data-filter="support">Tech Support</button>
+        <button class="btn btn-outline-primary btn-lg me-2" data-filter="design">Design</button>
+        <button class="btn btn-outline-primary btn-lg" data-filter="consulting">Consulting</button>
+      </div>
+
+      <!-- Grid -->
+      <div class="row g-4 service-container">
+        <!-- 1. Computer & Tech Services -->
+        <div class="col-md-6 col-lg-4 service-item" data-category="support">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-img-wrapper position-relative">
+              <div class="service-icon-overlay d-flex align-items-center justify-content-center">
+                <i class="fas fa-laptop-code fa-3x text-primary"></i>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Computer & Tech Support</h5>
+              <p class="card-text">Professional hardware and software solutions to keep your systems running smoothly.</p>
+              <div class="service-details mb-3">
+                <span class="badge bg-light text-dark me-2 mb-2">Hardware Repair</span>
+                <span class="badge bg-light text-dark me-2 mb-2">OS Installation</span>
+                <span class="badge bg-light text-dark me-2 mb-2">Troubleshooting</span>
+                <span class="badge bg-light text-dark me-2 mb-2">Performance Tuning</span>
+              </div>
+              <div class="service-buttons d-flex gap-2">
+                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#techSupportModal">
+                  <i class="fas fa-info-circle me-1"></i> Details
+                </button>
+                <a href="contact.html" class="btn btn-success btn-sm">
+                  <i class="fas fa-paper-plane me-1"></i> Request
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- 2. Web Development -->
+        <div class="col-md-6 col-lg-4 service-item" data-category="development">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-img-wrapper position-relative">
+              <div class="service-icon-overlay d-flex align-items-center justify-content-center">
+                <i class="fas fa-code fa-3x text-success"></i>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Web Development</h5>
+              <p class="card-text">Custom websites and applications built with modern technologies.</p>
+              <div class="service-details mb-3">
+                <span class="badge bg-light text-dark me-2 mb-2">Responsive Design</span>
+                <span class="badge bg-light text-dark me-2 mb-2">PHP/MySQL</span>
+                <span class="badge bg-light text-dark me-2 mb-2">Hospital Systems</span>
+                <span class="badge bg-light text-dark me-2 mb-2">LAMP Stack</span>
+              </div>
+              <div class="service-buttons d-flex gap-2">
+                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#webDevModal">
+                  <i class="fas fa-info-circle me-1"></i> Details
+                </button>
+                <a href="contact.html" class="btn btn-success btn-sm">
+                  <i class="fas fa-paper-plane me-1"></i> Request
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- 3. Networking & Security -->
+        <div class="col-md-6 col-lg-4 service-item" data-category="support">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-img-wrapper position-relative">
+              <div class="service-icon-overlay d-flex align-items-center justify-content-center">
+                <i class="fas fa-network-wired fa-3x text-info"></i>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Networking & Security</h5>
+              <p class="card-text">Secure network solutions with focus on data protection.</p>
+              <div class="service-details mb-3">
+                <span class="badge bg-light text-dark me-2 mb-2">Network Setup</span>
+                <span class="badge bg-light text-dark me-2 mb-2">WiFi Security</span>
+                <span class="badge bg-light text-dark me-2 mb-2">Data Backup</span>
+                <span class="badge bg-light text-dark me-2 mb-2">Linux Security</span>
+              </div>
+              <div class="service-buttons d-flex gap-2">
+                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#networkingModal">
+                  <i class="fas fa-info-circle me-1"></i> Details
+                </button>
+                <a href="contact.html" class="btn btn-success btn-sm">
+                  <i class="fas fa-paper-plane me-1"></i> Request
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- 4. Graphics & Design -->
+        <div class="col-md-6 col-lg-4 service-item" data-category="design">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-img-wrapper position-relative">
+              <div class="service-icon-overlay d-flex align-items-center justify-content-center">
+                <i class="fas fa-palette fa-3x text-warning"></i>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Graphics & Design</h5>
+              <p class="card-text">Creative design solutions for branding and marketing.</p>
+              <div class="service-details mb-3">
+                <span class="badge bg-light text-dark me-2 mb-2">Logo Design</span>
+                <span class="badge bg-light text-dark me-2 mb-2">Posters</span>
+                <span class="badge bg-light text-dark me-2 mb-2">Hotel Menus</span>
+                <span class="badge bg-light text-dark me-2 mb-2">Business Cards</span>
+              </div>
+              <div class="service-buttons d-flex gap-2">
+                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#graphicsModal">
+                  <i class="fas fa-info-circle me-1"></i> Details
+                </button>
+                <a href="contact.html" class="btn btn-success btn-sm">
+                  <i class="fas fa-paper-plane me-1"></i> Request
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- 5. Training & Mentorship -->
+        <div class="col-md-6 col-lg-4 service-item" data-category="consulting">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-img-wrapper position-relative">
+              <div class="service-icon-overlay d-flex align-items-center justify-content-center">
+                <i class="fas fa-chalkboard-teacher fa-3x text-danger"></i>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Training & Mentorship</h5>
+              <p class="card-text">IT training programs for individuals and teams.</p>
+              <div class="service-details mb-3">
+                <span class="badge bg-light text-dark me-2 mb-2">Programming</span>
+                <span class="badge bg-light text-dark me-2 mb-2">Web Dev</span>
+                <span class="badge bg-light text-dark me-2 mb-2">Linux CLI</span>
+                <span class="badge bg-light text-dark me-2 mb-2">Git/GitHub</span>
+              </div>
+              <div class="service-buttons d-flex gap-2">
+                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#trainingModal">
+                  <i class="fas fa-info-circle me-1"></i> Details
+                </button>
+                <a href="contact.html" class="btn btn-success btn-sm">
+                  <i class="fas fa-paper-plane me-1"></i> Request
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- 6. Mobile & Digital -->
+        <div class="col-md-6 col-lg-4 service-item" data-category="development">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-img-wrapper position-relative">
+              <div class="service-icon-overlay d-flex align-items-center justify-content-center">
+                <i class="fas fa-mobile-alt fa-3x text-secondary"></i>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Mobile & Digital</h5>
+              <p class="card-text">Mobile optimization and digital presence solutions.</p>
+              <div class="service-details mb-3">
+                <span class="badge bg-light text-dark me-2 mb-2">Android</span>
+                <span class="badge bg-light text-dark me-2 mb-2">Social Media</span>
+                <span class="badge bg-light text-dark me-2 mb-2">WhatsApp Business</span>
+                <span class="badge bg-light text-dark me-2 mb-2">Digital Portfolio</span>
+              </div>
+              <div class="service-buttons d-flex gap-2">
+                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#mobileDigitalModal">
+                  <i class="fas fa-info-circle me-1"></i> Details
+                </button>
+                <a href="contact.html" class="btn btn-success btn-sm">
+                  <i class="fas fa-paper-plane me-1"></i> Request
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Call to Action -->
+      <div class="text-center mt-5 p-4 bg-primary text-white rounded shadow">
+        <h3 class="fw-bold mb-3">Ready to Get Started?</h3>
+        <p class="mb-4">Contact me today for a free consultation about your IT needs</p>
+        <a href="contact.html" class="btn btn-light btn-lg px-4 fw-bold">Contact Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modals -->
+  <!-- Tech Support Modal -->
+  <div class="modal fade" id="techSupportModal" tabindex="-1" aria-labelledby="techSupportLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fw-bold" id="techSupportLabel">Computer & Tech Support</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="fs-5">Professional hardware and software solutions to keep your systems running smoothly.</p>
+          <ul class="fs-5">
+            <li>Computer Repair & Maintenance</li>
+            <li>Windows/Linux Installation & Configuration</li>
+            <li>Software Installation & Troubleshooting</li>
+            <li>System Optimization & Cleanup</li>
+            <li>Virus & Malware Removal</li>
+            <li>Hardware Upgrades & Diagnostics</li>
+            <li>Data Backup & Recovery</li>
+          </ul>
+          <div class="mt-4 d-flex justify-content-between">
+            <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Close</button>
+            <a href="contact.html" class="btn btn-success">
+              <i class="fas fa-paper-plane me-2"></i>Request Service
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Web Development Modal -->
+  <div class="modal fade" id="webDevModal" tabindex="-1" aria-labelledby="webDevLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fw-bold" id="webDevLabel">Web Development</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="fs-5">Custom websites and web applications built to your specifications.</p>
+          <ul class="fs-5">
+            <li>Responsive Website Design (HTML/CSS/JavaScript)</li>
+            <li>PHP-MySQL Web Applications with CRUD Operations</li>
+            <li>Hospital Management System Development</li>
+            <li>Web Hosting & Apache Server Setup (LAMP stack)</li>
+            <li>Basic Authentication System Integration</li>
+            <li>Portfolio Website Creation</li>
+            <li>E-commerce Solutions</li>
+          </ul>
+          <div class="mt-4 d-flex justify-content-between">
+            <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Close</button>
+            <a href="contact.html" class="btn btn-success">
+              <i class="fas fa-paper-plane me-2"></i>Request Service
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Networking Modal -->
+  <div class="modal fade" id="networkingModal" tabindex="-1" aria-labelledby="networkingLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fw-bold" id="networkingLabel">Networking & Security</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="fs-5">Secure network solutions for home and business.</p>
+          <ul class="fs-5">
+            <li>Basic Network Setup & Configuration</li>
+            <li>MiFi Device Setup & Optimization</li>
+            <li>Data Backup & Encryption Solutions</li>
+            <li>Linux File Permissions & Security Basics</li>
+            <li>Wireless Network Security</li>
+            <li>VPN Setup & Configuration</li>
+            <li>Network Troubleshooting</li>
+          </ul>
+          <div class="mt-4 d-flex justify-content-between">
+            <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Close</button>
+            <a href="contact.html" class="btn btn-success">
+              <i class="fas fa-paper-plane me-2"></i>Request Service
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Graphics Modal -->
+  <div class="modal fade" id="graphicsModal" tabindex="-1" aria-labelledby="graphicsLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fw-bold" id="graphicsLabel">Graphics & Design</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="fs-5">Professional design services for your business needs.</p>
+          <ul class="fs-5">
+            <li>Poster Creation for Events or Businesses</li>
+            <li>Basic Logo Design (Canva or similar tools)</li>
+            <li>Menu Book Design for Hotels/Restaurants</li>
+            <li>Business Card Design</li>
+            <li>Flyer & Brochure Design</li>
+            <li>Social Media Graphics</li>
+            <li>Basic Branding Packages</li>
+          </ul>
+          <div class="mt-4 d-flex justify-content-between">
+            <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Close</button>
+            <a href="contact.html" class="btn btn-success">
+              <i class="fas fa-paper-plane me-2"></i>Request Service
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Training Modal -->
+  <div class="modal fade" id="trainingModal" tabindex="-1" aria-labelledby="trainingLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fw-bold" id="trainingLabel">Training & Mentorship</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="fs-5">IT training programs to boost your skills.</p>
+          <ul class="fs-5">
+            <li>Beginner ICT Lessons (MS Office, File Management)</li>
+            <li>Introduction to Programming (Python, C, PHP)</li>
+            <li>Ubuntu/Linux Command Line Basics</li>
+            <li>Git & GitHub Training for Beginners</li>
+            <li>Web Development Fundamentals</li>
+            <li>Database Management Basics</li>
+            <li>Career Guidance in Tech</li>
+          </ul>
+          <div class="mt-4 d-flex justify-content-between">
+            <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Close</button>
+            <a href="contact.html" class="btn btn-success">
+              <i class="fas fa-paper-plane me-2"></i>Request Service
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile & Digital Modal -->
+  <div class="modal fade" id="mobileDigitalModal" tabindex="-1" aria-labelledby="mobileDigitalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fw-bold" id="mobileDigitalLabel">Mobile & Digital Services</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="fs-5">Mobile and digital solutions for modern businesses.</p>
+          <ul class="fs-5">
+            <li>Android Device Optimization</li>
+            <li>WhatsApp Business Setup for Clients</li>
+            <li>Social Media Page Setup for Businesses</li>
+            <li>Digital Portfolio Creation Assistance</li>
+            <li>Mobile App Consultation</li>
+            <li>Basic SEO Setup</li>
+            <li>Online Presence Strategy</li>
+          </ul>
+          <div class="mt-4 d-flex justify-content-between">
+            <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Close</button>
+            <a href="contact.html" class="btn btn-success">
+              <i class="fas fa-paper-plane me-2"></i>Request Service
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-dark text-white py-5">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-md-4">
+          <h3>Moses Mwangi</h3>
+          <p>IT Specialist & Web Developer providing comprehensive tech solutions.</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 text-md-end">
+          <h5>Connect with Me</h5>
+          <div class="social-links mb-3">
+            <a href="https://github.com/MosesCodeX-CS" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="text-white me-3">
+              <i class="fab fa-github fa-lg"></i>
+            </a>
+            <a href="https://linkedin.com/in/moses-mwangi" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="text-white me-3">
+              <i class="fab fa-linkedin fa-lg"></i>
+            </a>
+            <a href="mailto:mwangimoses372@gmail.com" aria-label="Email" class="text-white">
+              <i class="fas fa-envelope fa-lg"></i>
+            </a>
+          </div>
+          <p class="mb-0">© <span id="year"></span> All Rights Reserved</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

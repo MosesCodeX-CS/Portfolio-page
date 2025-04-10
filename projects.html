@@ -22,7 +22,7 @@
           <ul class="navbar-nav ms-auto align-items-center">
             <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+            <li class="nav-item"><a class="nav-link active" href="projects.html">Projects</a></li>
             <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
             <li class="nav-item ms-3">
               <button id="dark-mode-toggle" class="btn btn-outline-light" aria-label="Toggle dark mode">
@@ -35,15 +35,19 @@
     </nav>
   </header>
 
-  <section class="projects-section py-5">
+  <section class="projects-section py-5 mt-5">
     <div class="container">
-      <h2 class="text-center mb-5 display-4 fw-bold">My <span class="text-gradient">Projects</span></h2>
+      <div class="text-center mb-5">
+        <h2 class="display-4 fw-bold">My <span class="text-gradient">Projects</span></h2>
+        <p class="lead">Explore my latest work and technical achievements</p>
+      </div>
 
       <!-- Filters -->
-      <div class="text-center mb-5">
-        <button class="btn btn-outline-primary btn-lg me-2 active" data-filter="all">All</button>
-        <button class="btn btn-outline-primary btn-lg me-2" data-filter="web">Web</button>
-        <button class="btn btn-outline-primary btn-lg" data-filter="mobile">Mobile</button>
+      <div class="text-center filter-buttons mb-5">
+        <button class="btn btn-outline-primary btn-lg me-2 active" data-filter="all">All Projects</button>
+        <button class="btn btn-outline-primary btn-lg me-2" data-filter="web">Web Development</button>
+        <button class="btn btn-outline-primary btn-lg me-2" data-filter="mobile">Mobile Apps</button>
+        <button class="btn btn-outline-primary btn-lg" data-filter="devops">DevOps</button>
       </div>
 
       <!-- Grid -->
@@ -54,7 +58,14 @@
             <div class="card-body">
               <h5 class="card-title fw-bold">Hospital Management System</h5>
               <p class="card-text">A comprehensive healthcare solution built with Symfony and MySQL, containerized with Docker, and deployed on AWS for scalability and reliability.</p>
-              <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#project1Modal">View Details</button>
+              <div class="project-buttons d-flex gap-2">
+                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#project1Modal">
+                  <i class="fas fa-info-circle me-1"></i> View Details
+                </button>
+                <a href="https://hmis.mosesmwangi.com" target="_blank" class="btn btn-success btn-sm">
+                  <i class="fas fa-external-link-alt me-1"></i> Live Demo
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -64,7 +75,14 @@
             <div class="card-body">
               <h5 class="card-title fw-bold">Real-Time Chat App</h5>
               <p class="card-text">A feature-rich chat platform with Socket.io, supporting private rooms, file sharing, and persistent message history for seamless communication.</p>
-              <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#project4Modal">View Details</button>
+              <div class="project-buttons d-flex gap-2">
+                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#project4Modal">
+                  <i class="fas fa-info-circle me-1"></i> View Details
+                </button>
+                <a href="https://chat.mosesmwangi.com" target="_blank" class="btn btn-success btn-sm">
+                  <i class="fas fa-external-link-alt me-1"></i> Live Demo
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -74,7 +92,14 @@
             <div class="card-body">
               <h5 class="card-title fw-bold">Analytics Dashboard</h5>
               <p class="card-text">A business intelligence tool with interactive D3.js and Chart.js visualizations, integrated with a REST API for real-time data insights.</p>
-              <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#project5Modal">View Details</button>
+              <div class="project-buttons d-flex gap-2">
+                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#project5Modal">
+                  <i class="fas fa-info-circle me-1"></i> View Details
+                </button>
+                <a href="https://analytics.mosesmwangi.com" target="_blank" class="btn btn-success btn-sm">
+                  <i class="fas fa-external-link-alt me-1"></i> Live Demo
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -84,7 +109,14 @@
             <div class="card-body">
               <h5 class="card-title fw-bold">Portfolio Website</h5>
               <p class="card-text">This very site! A component-based Bootstrap project with dark mode, particles.js animations, and smooth scrolling for a professional showcase.</p>
-              <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#project6Modal">View Details</button>
+              <div class="project-buttons d-flex gap-2">
+                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#project6Modal">
+                  <i class="fas fa-info-circle me-1"></i> View Details
+                </button>
+                <a href="https://mosesmwangi.com" target="_blank" class="btn btn-success btn-sm">
+                  <i class="fas fa-external-link-alt me-1"></i> Live Demo
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -94,7 +126,14 @@
             <div class="card-body">
               <h5 class="card-title fw-bold">Hotel POS System</h5>
               <p class="card-text">A tailored point-of-sale system for Bellamy Hotel, built with PHP and MySQL, featuring order tracking, billing, and comprehensive reporting tools.</p>
-              <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#hotelPosModal">View Details</button>
+              <div class="project-buttons d-flex gap-2">
+                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#hotelPosModal">
+                  <i class="fas fa-info-circle me-1"></i> View Details
+                </button>
+                <a href="https://pos.mosesmwangi.com" target="_blank" class="btn btn-success btn-sm">
+                  <i class="fas fa-external-link-alt me-1"></i> Live Demo
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -104,7 +143,66 @@
             <div class="card-body">
               <h5 class="card-title fw-bold">Fitness Tracker App</h5>
               <p class="card-text">A cross-platform mobile app built with React Native, tracking workouts, calories, and goals with cloud sync and user-friendly dashboards.</p>
-              <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#project9Modal">View Details</button>
+              <div class="project-buttons d-flex gap-2">
+                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#project9Modal">
+                  <i class="fas fa-info-circle me-1"></i> View Details
+                </button>
+                <a href="https://fitnesstracker.mosesmwangi.com" target="_blank" class="btn btn-success btn-sm">
+                  <i class="fas fa-external-link-alt me-1"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- New Projects -->
+        <div class="col-md-6 col-lg-4 project-item" data-category="devops">
+          <div class="card h-100 border-0 shadow-sm">
+            <img src="images/project-ci-cd.jpg" class="card-img-top" alt="CI/CD Pipeline" />
+            <div class="card-body">
+              <h5 class="card-title fw-bold">CI/CD Pipeline Automation</h5>
+              <p class="card-text">A robust CI/CD pipeline built with GitHub Actions, Jenkins, and Terraform to automate testing, building, and deployment of microservices.</p>
+              <div class="project-buttons d-flex gap-2">
+                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#cicdModal">
+                  <i class="fas fa-info-circle me-1"></i> View Details
+                </button>
+                <a href="https://cicd.mosesmwangi.com" target="_blank" class="btn btn-success btn-sm">
+                  <i class="fas fa-external-link-alt me-1"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 project-item" data-category="mobile">
+          <div class="card h-100 border-0 shadow-sm">
+            <img src="images/project-travel-app.jpg" class="card-img-top" alt="Travel Companion App" />
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Travel Companion App</h5>
+              <p class="card-text">A mobile application for travelers with integrated maps, location-based recommendations, and offline itinerary planning capabilities.</p>
+              <div class="project-buttons d-flex gap-2">
+                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#travelAppModal">
+                  <i class="fas fa-info-circle me-1"></i> View Details
+                </button>
+                <a href="https://travel.mosesmwangi.com" target="_blank" class="btn btn-success btn-sm">
+                  <i class="fas fa-external-link-alt me-1"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 project-item" data-category="devops">
+          <div class="card h-100 border-0 shadow-sm">
+            <img src="images/project-k8s.jpg" class="card-img-top" alt="Kubernetes Infrastructure" />
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Kubernetes Infrastructure</h5>
+              <p class="card-text">A scalable Kubernetes infrastructure setup with Helm charts, custom operators, and automated monitoring using Prometheus and Grafana.</p>
+              <div class="project-buttons d-flex gap-2">
+                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#kubernetesModal">
+                  <i class="fas fa-info-circle me-1"></i> View Details
+                </button>
+                <a href="https://k8s.mosesmwangi.com" target="_blank" class="btn btn-success btn-sm">
+                  <i class="fas fa-external-link-alt me-1"></i> Live Demo
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -112,7 +210,7 @@
     </div>
   </section>
 
-  <!-- Modals -->
+  <!-- Original Modals -->
   <div class="modal fade" id="project1Modal" tabindex="-1" aria-labelledby="project1Label" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered">
       <div class="modal-content">
@@ -128,6 +226,14 @@
             <li>Tech Stack: Symfony, MySQL, Docker, AWS EC2</li>
           </ul>
           <img src="images/project1-detail.png" class="img-fluid rounded" alt="HMIS screenshot" />
+          <div class="mt-4 d-flex justify-content-between">
+            <a href="https://github.com/MosesCodeX-CS/hospital-management" target="_blank" class="btn btn-outline-dark">
+              <i class="fab fa-github me-2"></i>View Code
+            </a>
+            <a href="https://hmis.mosesmwangi.com" target="_blank" class="btn btn-success">
+              <i class="fas fa-external-link-alt me-2"></i>Live Demo
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -147,6 +253,14 @@
             <li>Tech Stack: Socket.io, Node.js, MongoDB, Bootstrap</li>
           </ul>
           <img src="images/project4-detail.png" class="img-fluid rounded" alt="Chat App screenshot" />
+          <div class="mt-4 d-flex justify-content-between">
+            <a href="https://github.com/MosesCodeX-CS/realtime-chat" target="_blank" class="btn btn-outline-dark">
+              <i class="fab fa-github me-2"></i>View Code
+            </a>
+            <a href="https://chat.mosesmwangi.com" target="_blank" class="btn btn-success">
+              <i class="fas fa-external-link-alt me-2"></i>Live Demo
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -166,6 +280,14 @@
             <li>Tech Stack: Express.js, D3.js, Chart.js</li>
           </ul>
           <img src="images/project5-detail.png" class="img-fluid rounded" alt="Dashboard screenshot" />
+          <div class="mt-4 d-flex justify-content-between">
+            <a href="https://github.com/MosesCodeX-CS/analytics-dashboard" target="_blank" class="btn btn-outline-dark">
+              <i class="fab fa-github me-2"></i>View Code
+            </a>
+            <a href="https://analytics.mosesmwangi.com" target="_blank" class="btn btn-success">
+              <i class="fas fa-external-link-alt me-2"></i>Live Demo
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -185,6 +307,14 @@
             <li>Tech Stack: Bootstrap 5, custom CSS, JavaScript</li>
           </ul>
           <img src="images/project6-detail.png" class="img-fluid rounded" alt="Portfolio screenshot" />
+          <div class="mt-4 d-flex justify-content-between">
+            <a href="https://github.com/MosesCodeX-CS/portfolio" target="_blank" class="btn btn-outline-dark">
+              <i class="fab fa-github me-2"></i>View Code
+            </a>
+            <a href="https://mosesmwangi.com" target="_blank" class="btn btn-success">
+              <i class="fas fa-external-link-alt me-2"></i>Live Demo
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -204,6 +334,14 @@
             <li>Tech Stack: PHP (Laravel), MySQL, Bootstrap</li>
           </ul>
           <img src="images/project7-detail.png" class="img-fluid rounded" alt="Hotel POS screenshot" />
+          <div class="mt-4 d-flex justify-content-between">
+            <a href="https://github.com/MosesCodeX-CS/hotel-pos" target="_blank" class="btn btn-outline-dark">
+              <i class="fab fa-github me-2"></i>View Code
+            </a>
+            <a href="https://pos.mosesmwangi.com" target="_blank" class="btn btn-success">
+              <i class="fas fa-external-link-alt me-2"></i>Live Demo
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -223,6 +361,100 @@
             <li>Tech Stack: React Native, Firebase, Redux</li>
           </ul>
           <img src="images/project9-detail.png" class="img-fluid rounded" alt="Fitness Tracker screenshot" />
+          <div class="mt-4 d-flex justify-content-between">
+            <a href="https://github.com/MosesCodeX-CS/fitness-tracker" target="_blank" class="btn btn-outline-dark">
+              <i class="fab fa-github me-2"></i>View Code
+            </a>
+            <a href="https://fitnesstracker.mosesmwangi.com" target="_blank" class="btn btn-success">
+              <i class="fas fa-external-link-alt me-2"></i>Live Demo
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- New Modals -->
+  <div class="modal fade" id="cicdModal" tabindex="-1" aria-labelledby="cicdLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fw-bold" id="cicdLabel">CI/CD Pipeline Automation</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="fs-5">An end-to-end CI/CD pipeline solution for continuous integration and delivery of microservices.</p>
+          <ul class="fs-5">
+            <li>Automated testing with Jest and Cypress integration</li>
+            <li>Infrastructure as Code using Terraform and CloudFormation</li>
+            <li>Zero-downtime deployments with blue-green strategy</li>
+            <li>Tech Stack: GitHub Actions, Jenkins, Docker, Terraform, AWS</li>
+          </ul>
+          <img src="images/project-ci-cd-detail.png" class="img-fluid rounded" alt="CI/CD Pipeline screenshot" />
+          <div class="mt-4 d-flex justify-content-between">
+            <a href="https://github.com/MosesCodeX-CS/cicd-pipeline" target="_blank" class="btn btn-outline-dark">
+              <i class="fab fa-github me-2"></i>View Code
+            </a>
+            <a href="https://cicd.mosesmwangi.com" target="_blank" class="btn btn-success">
+              <i class="fas fa-external-link-alt me-2"></i>Live Demo
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="travelAppModal" tabindex="-1" aria-labelledby="travelAppLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fw-bold" id="travelAppLabel">Travel Companion App</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="fs-5">A comprehensive travel companion mobile application for smart trip planning and exploration.</p>
+          <ul class="fs-5">
+            <li>Real-time location tracking and navigation</li>
+            <li>Offline maps and itinerary access</li>
+            <li>AI-powered recommendation engine for attractions</li>
+            <li>Tech Stack: React Native, Google Maps API, Firebase, TensorFlow Lite</li>
+          </ul>
+          <img src="images/project-travel-app-detail.png" class="img-fluid rounded" alt="Travel App screenshot" />
+          <div class="mt-4 d-flex justify-content-between">
+            <a href="https://github.com/MosesCodeX-CS/travel-companion" target="_blank" class="btn btn-outline-dark">
+              <i class="fab fa-github me-2"></i>View Code
+            </a>
+            <a href="https://travel.mosesmwangi.com" target="_blank" class="btn btn-success">
+              <i class="fas fa-external-link-alt me-2"></i>Live Demo
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="kubernetesModal" tabindex="-1" aria-labelledby="kubernetesLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fw-bold" id="kubernetesLabel">Kubernetes Infrastructure</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="fs-5">A cloud-native infrastructure solution built with Kubernetes for scalable microservices deployment.</p>
+          <ul class="fs-5">
+            <li>Custom Helm charts for application deployment</li>
+            <li>Service mesh implementation with Istio</li>
+            <li>Comprehensive monitoring with Prometheus and Grafana</li>
+            <li>Tech Stack: Kubernetes, Helm, Prometheus, Grafana, Istio, AWS EKS</li>
+          </ul>
+          <img src="images/project-k8s-detail.png" class="img-fluid rounded" alt="Kubernetes Infrastructure screenshot" />
+          <div class="mt-4 d-flex justify-content-between">
+            <a href="https://github.com/MosesCodeX-CS/kubernetes-infra" target="_blank" class="btn btn-outline-dark">
+              <i class="fab fa-github me-2"></i>View Code
+            </a>
+            <a href="https://k8s.mosesmwangi.com" target="_blank" class="btn btn-success">
+              <i class="fas fa-external-link-alt me-2"></i>Live Demo
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -258,12 +490,3 @@
             </a>
           </div>
           <p class="mb-0">© <span id="year"></span> All Rights Reserved</p>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
-  <script src="js/main.js" defer></script>
-</body>
-</html>
